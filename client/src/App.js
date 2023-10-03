@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter , Route, Routes } from 'react-router-dom';
-import Signup from './CreateUser.jsx';
+import Signup from './CreateUser';
 import Login from './LoginUser.jsx';
 import BlogUploadPanel from './Components/BlogPanel.jsx';
 

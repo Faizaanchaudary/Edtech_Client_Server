@@ -19,20 +19,11 @@ function Signup(){
       }
       console.log('signup', formData)
       // Send a POST request to the server's signup endpoint with the form data
-      const response = await axios.post('http://localhost:5000/auth/signup', formData);
+      const response = await axios.post('http://localhost:5000/signup', formData);
 
       // If the signup is successful, display a success message
       console.log(response.data.message); // User registered successfully
 
-      // Clear form data
-      // setFormData({
-      //   name: '',
-      //   email: '',
-      //   password: '',
-      // });
-
-      // Clear any previous error messages
-      // setError(null);
     } catch (error) {
       // Handle errors from the server
       console.error(error.response.data.message);

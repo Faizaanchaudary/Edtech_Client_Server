@@ -31,7 +31,8 @@ function Signup() {
       const response = await axios.post('/auth/signup', formData);
 
       // If the signup is successful, display a success message
-      console.log(response.data.message); // User registered successfully
+      console.log(response.data.message);
+       // User registered successfully
 
       // Clear form data
       setFormData({
